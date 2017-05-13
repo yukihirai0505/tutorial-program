@@ -18,4 +18,5 @@ func main() {
 	practice.PrintForContinued()
 	practice.PrintIf()
 	practice.PrintIfWithShortStatement()
+	practice.PrintSwitch()
 }
