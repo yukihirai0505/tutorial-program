@@ -8,4 +8,5 @@ func main() {
 	practice.Hello()
 	practice.PrintTime()
 	practice.PrintAdd(1, 2)
+	practice.PrintSwap("hello", "world")
 }
