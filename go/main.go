@@ -15,4 +15,5 @@ func main() {
 	practice.PrintShortVariableDeclaration()
 	practice.PrintConstHello()
 	practice.PrintFor()
+	practice.PrintForContinued()
 }
