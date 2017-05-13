@@ -16,4 +16,5 @@ func main() {
 	practice.PrintConstHello()
 	practice.PrintFor()
 	practice.PrintForContinued()
+	practice.PrintIf()
 }
