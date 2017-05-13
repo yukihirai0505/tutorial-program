@@ -19,4 +19,5 @@ func main() {
 	practice.PrintIf()
 	practice.PrintIfWithShortStatement()
 	practice.PrintSwitch()
+	practice.PrintSwitchWithNoCondition()
 }
