@@ -21,4 +21,5 @@ func main() {
 	practice.PrintSwitch()
 	practice.PrintSwitchWithNoCondition()
 	practice.PrintDefer()
+	practice.PrintStackingDefers()
 }
