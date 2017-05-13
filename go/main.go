@@ -13,4 +13,5 @@ func main() {
 	practice.PrintVariable()
 	practice.PrintVariableWithInitialize()
 	practice.PrintShortVariableDeclaration()
+	practice.PrintConstHello()
 }
