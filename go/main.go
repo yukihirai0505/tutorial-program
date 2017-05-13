@@ -10,4 +10,7 @@ func main() {
 	practice.PrintAdd(1, 2)
 	practice.PrintSwap("hello", "world")
 	practice.PrintSplit(17)
+	practice.PrintVariable()
+	practice.PrintVariableWithInitialize()
+	practice.PrintShortVariableDeclaration()
 }
