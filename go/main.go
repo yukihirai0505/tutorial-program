@@ -1,6 +1,8 @@
 package main
 
+import "./practice"
+
 func main() {
-	hello()
-	printTime()
+	practice.Hello()
+	practice.PrintTime()
 }
