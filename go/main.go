@@ -22,4 +22,5 @@ func main() {
 	practice.PrintSwitchWithNoCondition()
 	practice.PrintDefer()
 	practice.PrintStackingDefers()
+	practice.PrintPointer()
 }
