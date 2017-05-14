@@ -26,4 +26,5 @@ func main() {
 	practice.PrintStruct()
 	practice.PrintArray()
 	practice.PrintSlice()
+	practice.PrintRange()
 }
