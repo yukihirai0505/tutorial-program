@@ -29,4 +29,5 @@ func main() {
 	practice.PrintRange()
 	practice.PrintMap()
 	practice.PrintFunctionValues()
+	practice.PrintMethod()
 }
