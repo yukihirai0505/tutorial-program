@@ -28,4 +28,5 @@ func main() {
 	practice.PrintSlice()
 	practice.PrintRange()
 	practice.PrintMap()
+	practice.PrintFunctionValues()
 }
