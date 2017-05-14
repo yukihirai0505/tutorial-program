@@ -23,4 +23,5 @@ func main() {
 	practice.PrintDefer()
 	practice.PrintStackingDefers()
 	practice.PrintPointer()
+	practice.PrintStruct()
 }
