@@ -84,10 +84,8 @@ RUN wget http://ftp.riken.jp/net/apache//ant/binaries/apache-ant-${ANT_VERSION}-
     && mv apache-ant-${ANT_VERSION} /opt/ant \
     && rm apache-ant-${ANT_VERSION}-bin.zip
 
-# jenv setting
-RUN echo 'export PATH="/opt/.jenv/bin:$PATH"' >> /home/play/.bashrc
-RUN echo 'eval "$(jenv init -)"' >> /home/play/.bashrc
 # play setting
+ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 RUN echo 'export PLAY_HOME="/opt/play"' >> /home/play/.bashrc
 RUN echo 'export PATH="$PATH:$PLAY_HOME"' >> /home/play/.bashrc
 # ant setting
