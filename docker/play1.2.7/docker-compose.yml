@@ -11,7 +11,7 @@ web:
   build: .
   command: echo "hoge"
   volumes:
-    - .:/myapp
+    - .:/home/play/Code
   ports:
     - "9000:9000"
   links:
