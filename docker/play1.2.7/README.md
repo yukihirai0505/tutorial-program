@@ -7,8 +7,18 @@ $ eval $(docker-machine env play1.2.7)
 $ docker-compose up -d
 ```
 
-## See container
+## Docker Tips
 
-```
-$ docker run -it play127_web /bin/bash
-```
+
+To confirm process
+
+`$ docker ps`
+
+Login to a running container
+
+`$ docker exec -i -t {CONTAINER ID} /bin/bash`
+
+Start container and login
+
+`$ docker run -it play127_web /bin/bash`
+
