@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 
-const Todo = ({ text }) => (
-  <li>
+const Todo = ({ completed, text }) => (
+  <li style={{textDecoration: completed ? 'line-through': 'none'}}>
     {text}
   </li>
 )
