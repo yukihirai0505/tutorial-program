@@ -126,3 +126,11 @@ console.log(RegExp.$1);
 
 console.log(RegExp.$1);
 console.log(rs[1]);
+
+// part11
+
+// match twitterId
+
+var s = '@yukihirai0505';
+var rs = s.match(/^@([A-Za-z0-9_]{1,15})$/);
+console.log(rs[1]);
