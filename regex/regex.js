@@ -53,3 +53,24 @@ if (rs) {
 // a* => 0 or more => , a, aaaa, aaaaaa
 // a+ => 1 or more => a, aaa, aaaaaa
 
+// part6
+
+// () => (abc)* => abc, abcabc
+// |  => or => (abc|def) => abc, def
+
+// part7
+
+// \n => break line
+// \t => tab
+// \d => number [0-9]
+// \w => english number _ [A-Za-z0-9_]
+// \s => space or tab
+// \(meta caharacter) => meta => \/
+
+// part8
+
+// javascript options
+
+// i => uppercase and lowercase
+// g => return all match element
+// m => apply multi line
