@@ -134,3 +134,11 @@ console.log(rs[1]);
 var s = '@yukihirai0505';
 var rs = s.match(/^@([A-Za-z0-9_]{1,15})$/);
 console.log(rs[1]);
+
+// part12
+
+// extract tag
+
+var s = '<title>yeah!yeah!!</title>';
+var rs = s.match(/<title>([^<]+)<\/title>/);
+console.log(rs[1]);
