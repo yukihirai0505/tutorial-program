@@ -101,3 +101,28 @@ console.log(rs);
 if (rs) {
   console.log('マッチしました!')
 }
+
+// part10
+
+// () RegExp
+
+// you can get the inside of () after
+
+var s = 'taguchi@dotinstall.com';
+var rs = s.match(/(.+?)@dotinstall(.com)/);
+
+console.log(RegExp.$1);
+// => taguchi
+console.log(RegExp.$2);
+// => .com
+
+var rs = s.match(/((.+?)@dotinstall(.com))/);
+// => taguchi@dotinstall.com
+
+console.log(RegExp.$1);
+
+// but now RegExp is deprecated https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features
+// so you should use return object
+
+console.log(RegExp.$1);
+console.log(rs[1]);
