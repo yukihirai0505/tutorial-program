@@ -74,3 +74,30 @@ if (rs) {
 // i => uppercase and lowercase
 // g => return all match element
 // m => apply multi line
+
+// part9
+
+// ? after * + means minimum match
+
+// *?
+// +?
+
+var s = 'taguchi@dotinstall.com, fkoji@dotinstall.com, admin@dotinstall.com';
+var rs = s.match(/.+@dotinstall.com/);
+
+console.log(rs);
+// => ["taguchi@dotinstall.com, fkoji@dotinstall.com, admin@dotinstall.com", index: 0, input: "taguchi@dotinstall.com, fkoji@dotinstall.com, admin@dotinstall.com"]
+
+if (rs) {
+  console.log('マッチしました!')
+}
+
+var s = 'taguchi@dotinstall.com, fkoji@dotinstall.com, admin@dotinstall.com';
+var rs = s.match(/.+?@dotinstall.com/);
+
+console.log(rs);
+// => ["taguchi@dotinstall.com", index: 0, input: "taguchi@dotinstall.com, fkoji@dotinstall.com, admin@dotinstall.com"]
+
+if (rs) {
+  console.log('マッチしました!')
+}
