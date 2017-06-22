@@ -1,5 +1,7 @@
 // practice /regexp?/
 
+// reference: http://dotinstall.com/lessons/basic_regexp
+
 // part1
 
 var s = '@taguchi, @fkoji, @dotinstall';
