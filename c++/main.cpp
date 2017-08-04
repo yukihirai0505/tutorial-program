@@ -27,8 +27,10 @@ int abs(int x) {
     return x >= 0 ? x : -x;
 }
 
-std::string int_to_str(int x) {
-    return std::to_string(x);
+template <class T>
+
+std::string to_str(T t) {
+    return std::to_string(t);
 }
 
 int main() {
@@ -45,19 +47,19 @@ int main() {
     int one = 1;
     int& b = one;
     b = 2;
-    disp(int_to_str(one));
-    disp(int_to_str(abs(-3)));
+    disp(to_str(one));
+    disp(to_str(abs(-3)));
 
     const std::vector<int> v = {1, 2, 3};
 
     // normal
     for (int i = 0; i < v.size(); ++i) {
-        disp(int_to_str(v[i]));
+        disp(to_str(v[i]));
     }
 
     // simple
     for (const int x: v) {
-        disp(int_to_str(x));
+        disp(to_str(x));
     }
 
     return 0;
