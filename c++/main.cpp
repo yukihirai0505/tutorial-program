@@ -1,6 +1,12 @@
 #include <iostream>
 #include <vector>
 
+// other function style
+int square1(int x)
+{
+    return x * x;
+}
+
 auto square(int x) -> int
 {
     return x * x;
