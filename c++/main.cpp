@@ -39,7 +39,6 @@ int main() {
     std::cout << "Hello, World!" << std::endl; // comment
     const int              a = square(3);
     const std::string      s = "abc";
-    const std::vector<int> v = {1, 2, 3};
     std::cout << a << std::endl;
     disp("Hello World");
 
@@ -49,6 +48,14 @@ int main() {
     disp(int_to_str(one));
     disp(int_to_str(abs(-3)));
 
+    const std::vector<int> v = {1, 2, 3};
+
+    // normal
+    for (int i = 0; i < v.size(); ++i) {
+        disp(int_to_str(v[i]));
+    }
+
+    // simple
     for (const int x: v) {
         disp(int_to_str(x));
     }
