@@ -2,21 +2,29 @@
 #include <vector>
 
 // other function style
-int square1(int x)
-{
+int square1(int x) {
     return x * x;
 }
 
-auto square(int x) -> int
-{
+auto square(int x) -> int {
     return x * x;
 }
 
 // no return
-void disp(const std::string& s)
-{
+void disp(const std::string& s) {
     std::string buf = "disp: " + s + "\n";
     printf(buf.c_str());
+}
+
+int abs1(int x) {
+    if (x >= 0) {
+        return x;
+    }
+    return -x;
+}
+
+int abs(int x) {
+    return x >= 0 ? x : -x;
 }
 
 int main() {
@@ -35,8 +43,7 @@ int main() {
     int& b = one;
     b = 2;
     disp(std::to_string(one));
-
-
+    disp(std::to_string(abs(-3)));
 
     return 0;
 }
