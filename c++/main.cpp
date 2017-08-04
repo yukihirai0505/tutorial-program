@@ -15,7 +15,7 @@ auto square(int x) -> int
 // no return
 void disp(const std::string& s)
 {
-    std::string buf = "disp: " + s;
+    std::string buf = "disp: " + s + "\n";
     printf(buf.c_str());
 }
 
@@ -30,5 +30,13 @@ int main() {
     const std::vector<int> v = {1, 2, 3};
     std::cout << a << std::endl;
     disp("Hello World");
+
+    int one = 1;
+    int& b = one;
+    one = 2;
+    disp(std::to_string(one));
+
+
+
     return 0;
 }
