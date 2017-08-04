@@ -49,5 +49,9 @@ int main() {
     disp(int_to_str(one));
     disp(int_to_str(abs(-3)));
 
+    for (const int x: v) {
+        disp(int_to_str(x));
+    }
+
     return 0;
 }
