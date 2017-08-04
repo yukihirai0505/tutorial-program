@@ -27,6 +27,10 @@ int abs(int x) {
     return x >= 0 ? x : -x;
 }
 
+std::string int_to_str(int x) {
+    return std::to_string(x);
+}
+
 int main() {
 
     /*
@@ -42,8 +46,8 @@ int main() {
     int one = 1;
     int& b = one;
     b = 2;
-    disp(std::to_string(one));
-    disp(std::to_string(abs(-3)));
+    disp(int_to_str(one));
+    disp(int_to_str(abs(-3)));
 
     return 0;
 }
