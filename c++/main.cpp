@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <map>
 
 // other function style
 int square1(int x) {
@@ -75,6 +76,24 @@ int main() {
     for (const int x: v) {
         disp(to_str(x));
     }
+
+    const std::map<std::string, int> m = {
+            {"Akira", 24},
+            {"Milla", 16},
+            {"Johny", 38}
+    };
+
+    const int age = m.at("Akira");
+    disp(to_str(age));
+
+    std::map<std::string, int> mm = {
+            {"Akira", 24},
+            {"Milla", 16},
+            {"Johny", 38}
+    };
+    mm["Sol"] = 150;
+    int solAge = mm.at("Sol");
+    disp(to_str(solAge));
 
     return 0;
 }
