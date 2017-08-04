@@ -98,7 +98,8 @@ int main() {
     int solAge = mm.at("Sol");
     disp(to_str(solAge));
 
-    const std::vector<int> vvv = {1,2,3,4,5,6,7,8,9,10};
+    std::vector<int> vvv = {1,2,3,4,5,6,7,8,9,10};
+    std::reverse(vvv.begin(), vvv.end());
     std::for_each(vvv.begin(), vvv.end(), &disp_int);
     auto it = std::find(vvv.begin(), vvv.end(), 2);
     if (it != v.end()) {
@@ -106,5 +107,6 @@ int main() {
     } else {
         std::cout << "not found: " << std::endl;
     }
+
     return 0;
 }
