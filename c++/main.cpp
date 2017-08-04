@@ -13,8 +13,11 @@ auto square(int x) -> int {
 
 // no return
 void disp(const std::string& s) {
-    std::string buf = "disp: " + s + "\n";
-    printf(buf.c_str());
+    std::cout << "disp: " << s << std::endl;
+}
+
+void disp_int(int s) {
+    std::cout << s << std::endl;
 }
 
 int abs1(int x) {
@@ -95,5 +98,13 @@ int main() {
     int solAge = mm.at("Sol");
     disp(to_str(solAge));
 
+    const std::vector<int> vvv = {1,2,3,4,5,6,7,8,9,10};
+    std::for_each(vvv.begin(), vvv.end(), &disp_int);
+    auto it = std::find(vvv.begin(), vvv.end(), 2);
+    if (it != v.end()) {
+        std::cout << "found: " << *it << std::endl;
+    } else {
+        std::cout << "not found: " << std::endl;
+    }
     return 0;
 }
