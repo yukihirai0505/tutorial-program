@@ -33,7 +33,7 @@ int main() {
 
     int one = 1;
     int& b = one;
-    one = 2;
+    b = 2;
     disp(std::to_string(one));
 
 
