@@ -12,6 +12,13 @@ auto square(int x) -> int
     return x * x;
 }
 
+// no return
+void disp(const std::string& s)
+{
+    std::string buf = "disp: " + s;
+    printf(buf.c_str());
+}
+
 int main() {
 
     /*
@@ -22,5 +29,6 @@ int main() {
     const std::string      s = "abc";
     const std::vector<int> v = {1, 2, 3};
     std::cout << a << std::endl;
+    disp("Hello World");
     return 0;
 }
