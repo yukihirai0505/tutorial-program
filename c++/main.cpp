@@ -52,6 +52,20 @@ int main() {
 
     const std::vector<int> v = {1, 2, 3};
 
+    // get first
+    disp(to_str(v.front()));
+    // get last
+    disp(to_str(v.back()));
+
+    // cannot const
+    std::vector<int> vv = {1,2,3};
+    vv.push_back(4);
+    disp(to_str(vv.back()));
+    vv.pop_back();
+    disp(to_str(vv.back()));
+    vv.assign({4,5,6});
+    disp(to_str(vv.back()));
+
     // normal
     for (int i = 0; i < v.size(); ++i) {
         disp(to_str(v[i]));
