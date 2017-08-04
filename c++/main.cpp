@@ -108,5 +108,7 @@ int main() {
         std::cout << "not found: " << std::endl;
     }
 
+    const std::vector<int> lam = {1,2,3};
+    std::for_each(lam.begin(), lam.end(), [](int x) { std::cout << x << std::endl; });
     return 0;
 }
