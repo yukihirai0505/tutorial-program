@@ -52,3 +52,7 @@ if hungry:
 else:
     print("I'm not hungary")
     print("I'm sleepy")
+
+# for
+for i in [1, 2, 3]:
+    print(i)
