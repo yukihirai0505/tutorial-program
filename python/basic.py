@@ -45,3 +45,10 @@ print(type(hungry))
 print(not hungry)
 print(hungry and sleepy)
 print(hungry or sleepy)
+
+# if
+if hungry:
+    print("I'm hungary")
+else:
+    print("I'm not hungary")
+    print("I'm sleepy")
