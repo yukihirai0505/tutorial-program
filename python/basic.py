@@ -31,3 +31,9 @@ print(a[1:])
 print(a[:3])
 print(a[:-1])
 print(a[:-2])
+
+# dictionary
+me = {'height': 180}
+print(me['height'])
+me['weight'] = 70
+print(me)
