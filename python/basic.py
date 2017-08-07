@@ -56,3 +56,14 @@ else:
 # for
 for i in [1, 2, 3]:
     print(i)
+
+# function
+def hello():
+    print("Hello World!")
+
+hello()
+
+def hello(object):
+    print("Hello " + object + "!")
+
+hello("cat")
