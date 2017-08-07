@@ -37,3 +37,11 @@ me = {'height': 180}
 print(me['height'])
 me['weight'] = 70
 print(me)
+
+# boolean
+hungry = True
+sleepy = False
+print(type(hungry))
+print(not hungry)
+print(hungry and sleepy)
+print(hungry or sleepy)
