@@ -1,8 +1,8 @@
 # calculate
-print(1-2)
-print(4*5)
-print(7/5)
-print(3**2)
+print(1 - 2)
+print(4 * 5)
+print(7 / 5)
+print(3 ** 2)
 
 # check type
 print(type(10))
@@ -15,8 +15,8 @@ print(x)
 x = 100
 print(x)
 y = 3.14
-print(x*y)
-print(type(x*y))
+print(x * y)
+print(type(x * y))
 
 # list
 a = [1, 2, 3, 4, 5]
@@ -57,13 +57,17 @@ else:
 for i in [1, 2, 3]:
     print(i)
 
+
 # function
 def hello():
     print("Hello World!")
 
+
 hello()
+
 
 def hello(object):
     print("Hello " + object + "!")
+
 
 hello("cat")
