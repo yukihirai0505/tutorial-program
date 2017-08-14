@@ -31,7 +31,7 @@ print(y)
 
 # fix overflow
 b = np.array([1010, 1000, 990])
-print(np.exp(a) / np.sum(np.exp(a)))
+print(np.exp(b) / np.sum(np.exp(b)))
 # -> array([ nan, nan, nan])
 
 c = np.max(b)
@@ -43,7 +43,7 @@ print(np.exp(b - c) / np.sum(np.exp(b - c)))
 
 # softmax result
 d = np.array([0.3, 2.9, 4.0])
-z = np.sum(d)
+z = softmax(d)
 print(z)
 # -> [ 0.01821127, 0.24519181, 0.736559691]
 print(np.sum(z))
