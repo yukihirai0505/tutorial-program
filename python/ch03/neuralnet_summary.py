@@ -2,6 +2,7 @@ import numpy as np
 from sigmoid import sigmoid
 from neuralnet_practive import identity_function
 
+
 def init_network():
     network = {}
     network['W1'] = np.array([[0.1, 0.3, 0.5], [0.2, 0.4, 0.6]])
@@ -12,6 +13,7 @@ def init_network():
     network['b3'] = np.array([0.1, 0.2])
 
     return network
+
 
 def forward(network, x):
     W1, W2, W3 = network['W1'], network['W2'], network['W3']
@@ -25,6 +27,7 @@ def forward(network, x):
     y = identity_function(a3)
 
     return y
+
 
 network = init_network()
 x = np.array([1.0, 0.5])

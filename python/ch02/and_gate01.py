@@ -6,6 +6,7 @@ def AND(x1, x2):
     elif tmp > theta:
         print(1)
 
+
 AND(0, 0)
 AND(1, 0)
 AND(0, 1)

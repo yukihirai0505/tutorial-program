@@ -26,8 +26,10 @@ print(B2.shape)
 A2 = np.dot(Z1, W2) + B2
 Z2 = sigmoid(A2)
 
+
 def identity_function(x):
     return x
+
 
 W3 = np.array([[0.1, 0.3], [0.2, 0.4]])
 B3 = np.array([0.1, 0.2])

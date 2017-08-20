@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # create data
-x = np.arange(0, 6, 0.1) # from 0 to 6 by 0.1
+x = np.arange(0, 6, 0.1)  # from 0 to 6 by 0.1
 print(x)
 y1 = np.sin(x)
 y2 = np.cos(x)
