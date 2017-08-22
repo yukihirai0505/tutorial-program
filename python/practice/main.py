@@ -1,3 +1,4 @@
+# coding=utf-8
 import numpy as np # NumPy の読み込み
 import matplotlib.pyplot as plt # matplotlib の読み込み
 
