@@ -9,7 +9,7 @@ import akka.stream.scaladsl._
   * Created by yukyh on 2017/08/25.
   */
 object SingleSource extends App {
-  implicit val system = ActorSystem()
+  implicit val system = ActorSystem("akka-streams-example")
   implicit val materializer = ActorMaterializer()
   val helloWorldStream: RunnableGraph[NotUsed] =
     Source.single("Hello world")
