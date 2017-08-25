@@ -8,6 +8,7 @@ libraryDependencies ++= {
   val akkaStreamV = "2.5.2"
   Seq(
     // Akka
+    "com.typesafe.akka" %% "akka-actor"  % akkaStreamV,
     "com.typesafe.akka" %% "akka-stream" % akkaStreamV,
     // Elasticsearch
     "org.apache.lucene" % "lucene-core" % "3.6.0",
