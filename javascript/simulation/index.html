@@ -31,6 +31,8 @@
     // ランダムメッセージ
     //var messages = ["あ", "い", "う", "え", "お"];
     //var resultMessage = messages[Math.floor(Math.random() * messages.length)];
+    // 配列を使用
+    //var resultMessage = resultMessages[gender][generation];
     if (gender === "1" && generation === "1") {
       resultMessage = "あなたは私のタイプです";
     }
@@ -45,5 +47,25 @@
       }
     }
   }
+  var resultMessages = [
+    [
+      "Male10",
+      "Male20",
+      "Male30",
+      "MaleOver40"
+    ],
+    [
+      "Female10",
+      "Female20",
+      "Female30",
+      "FemaleOver40"
+    ],
+    [
+      "Other10",
+      "Other20",
+      "Other30",
+      "OtherOver40"
+    ]
+  ]
 </script>
 </html>
