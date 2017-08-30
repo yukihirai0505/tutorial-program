@@ -45,7 +45,7 @@
     result.textContent = resultMessage;
     // result.style.color = 'red';
     // result.className = 'myStyle';
-  });
+  }, false);
 
   function getRadioValue(theRadioGroup) {
     var elements = document.getElementsByName(theRadioGroup);
@@ -55,6 +55,7 @@
       }
     }
   }
+
   var resultMessages = [
     [
       "Male10",
@@ -74,6 +75,14 @@
       "Other30",
       "OtherOver40"
     ]
-  ]
+  ];
+
+  /*
+  document.addEventListener('click', function() {
+    var greet = document.createElement('p'),
+      text = document.createTextNode('クリックしちゃだめ');
+    document.body.appendChild(greet).appendChild(text);
+  }, false);
+  */
 </script>
 </html>
