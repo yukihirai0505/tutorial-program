@@ -3,6 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>JSの練習</title>
+  <style>
+    .myStyle {
+      font-weight: bold;
+      border: 1px solid gray;
+    }
+  </style>
 </head>
 <body>
 <h1>シミュレーションアプリ</h1>
@@ -37,6 +43,8 @@
       resultMessage = "あなたは私のタイプです";
     }
     result.textContent = resultMessage;
+    // result.style.color = 'red';
+    // result.className = 'myStyle';
   });
 
   function getRadioValue(theRadioGroup) {
