@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JSの練習</title>
+</head>
+<body>
+<h1>シミュレーションアプリ</h1>
+<form class="" action="index.html" method="post" id="form">
+  <p>性別</p>
+  <input type="radio" name="gender" value="0" checked> Male
+  <input type="radio" name="gender" value="1"> Female
+  <input type="radio" name="gender" value="2"> Other
+  <p>世代</p>
+  <input type="radio" name="generation" value="0" checked> 10
+  <input type="radio" name="generation" value="1"> 20
+  <input type="radio" name="generation" value="2"> 30
+  <input type="radio" name="generation" value="3"> over 40<br /><br />
+  <input type="submit" name="" value="送信" id="submitBtn">
+</form>
+<p>結果: <span id="result"></span></p>
+</body>
+<script type="text/javascript">
+  var form = document.getElementById("form");
+  var result = document.getElementById("result");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    var gender = getRadioValue("gender");
+    var generation = getRadioValue("generation");
+    var resultMessage = "普通ですね";
+    if (gender === "1" && generation === "1") {
+      resultMessage = "あなたは私のタイプです";
+    }
+    result.textContent = resultMessage;
+  });
+
+  function getRadioValue(theRadioGroup) {
+    var elements = document.getElementsByName(theRadioGroup);
+    for (var i = 0, l = elements.length; i < l; i++)
+    {
+      if (elements[i].checked)
+      {
+        return elements[i].value;
+      }
+    }
+  }
+</script>
+</html>
