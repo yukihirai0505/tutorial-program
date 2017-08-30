@@ -1,4 +1,4 @@
-package com.example
+package com.example.elasticsearch
 
 import com.sksamuel.elastic4s.ElasticsearchClientUri
 import com.sksamuel.elastic4s.http.HttpClient
@@ -11,16 +11,19 @@ object HttpClientExampleApp extends App {
   import com.sksamuel.elastic4s.http.ElasticDsl._
 
   val client = HttpClient(ElasticsearchClientUri("localhost", 9200))
+  val indexName = "myindex"
+  val typeName = "mytype"
+  val indexNameAndType = indexName / typeName
 
   client.execute {
     bulk(
-      indexInto("myindex" / "mytype").fields("country" -> "Mongolia", "capital" -> "Ulaanbaatar"),
-      indexInto("myindex" / "mytype").fields("country" -> "Namibia", "capital" -> "Windhoek")
+      indexInto(indexNameAndType).fields("country" -> "Mongolia", "capital" -> "Ulaanbaatar"),
+      indexInto(indexNameAndType).fields("country" -> "Namibia", "capital" -> "Windhoek")
     ).refresh(RefreshPolicy.WAIT_UNTIL)
   }.await
 
   val result: SearchResponse = client.execute {
-    search("myindex").matchQuery("capital", "ulaanbaatar")
+    search(indexName).matchQuery("capital", "ulaanbaatar")
   }.await
 
   // prints out the original json

@@ -1,4 +1,4 @@
-package com.example
+package com.example.stream
 
 import java.io.{File, IOException}
 import javax.imageio.ImageIO

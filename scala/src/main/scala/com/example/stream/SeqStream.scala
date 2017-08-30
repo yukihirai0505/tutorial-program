@@ -1,11 +1,12 @@
-package com.example
+package com.example.stream
 
 /**
   * author Yuki Hirai on 2017/08/24.
   */
 import akka.actor._
 import akka.stream.ActorMaterializer
-import akka.stream.scaladsl.{Source,Sink}
+import akka.stream.scaladsl.{Sink, Source}
+
 import scala.concurrent.ExecutionContext.Implicits.global
 
 case class User(name:String)

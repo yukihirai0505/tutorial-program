@@ -1,4 +1,4 @@
-package com.example
+package com.example.stream
 
 import akka.Done
 import akka.actor.ActorSystem
