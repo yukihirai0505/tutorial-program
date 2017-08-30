@@ -25,10 +25,11 @@
   <input type="submit" name="" value="送信">
 </form>
 <p>結果: <span id="result"></span></p>
+<!-- <button id="dangerBtn">ゼッタイに押すなよ？</button> -->
 </body>
 <script type="text/javascript">
-  var form = document.getElementById("form");
-  var result = document.getElementById("result");
+  var form = document.getElementById("form"),
+    result = document.getElementById("result");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var gender = getRadioValue("gender");
@@ -82,6 +83,14 @@
     var greet = document.createElement('p'),
       text = document.createTextNode('クリックしちゃだめ');
     document.body.appendChild(greet).appendChild(text);
+  }, false);
+  */
+
+  /*
+  document.getElementById('dangerBtn').addEventListener('click', function(e) {
+    var p = document.createElement('p'),
+      text = document.createTextNode('ふりじゃないって！');
+    document.body.appendChild(p).appendChild(text);
   }, false);
   */
 </script>
