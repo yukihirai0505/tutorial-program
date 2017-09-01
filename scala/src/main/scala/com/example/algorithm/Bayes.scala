@@ -1,6 +1,7 @@
 package com.example.algorithm
 
 /**
+  * P(Y|X)P(X) = P(X|Y)P(Y)
   * author Yuki Hirai on 2017/09/01.
   */
 object Bayes extends App {
