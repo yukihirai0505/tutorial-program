@@ -1,7 +1,9 @@
 package com.example
 
-import scala.scalajs.js.JSApp
 import org.scalajs.jquery.jQuery
+
+import scala.scalajs.js
+import scala.scalajs.js.JSApp
 
 object Hello extends JSApp {
 
@@ -16,6 +18,9 @@ object Hello extends JSApp {
 
   def main(): Unit = {
     println("Hello, world!")
+    // Scala.jsからJavaScriptを呼び出す
+    js.Dynamic.global.alert("Hello, world!")
     jQuery(setupUI _)
   }
+
 }
