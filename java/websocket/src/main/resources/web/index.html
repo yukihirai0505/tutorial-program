@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>websocket demo application</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="conn-status">
+	WEBサーバーとの接続状態：
+</div>
+<hr>
+<div id="qa">
+	ただ今、サイトの同時にオンラインユーザ数を教えていただけますか？
+	<input type="submit" value="お問合せへ" onclick="start()" />
+</div>
+<div id="messages"></div>
+<script type="text/javascript">
+  var webSocket =
+    new WebSocket('ws://localhost:8080/websocketDemo/demo');
+
+  webSocket.onerror = function(event) {
+    onError(event)
+  };
+
+  webSocket.onopen = function(event) {
+    onOpen(event)
+  };
+
+  webSocket.onmessage = function(event) {
+    onMessage(event)
+  };
+
+  // サーバーへhelloメッセージを送る
+  function start() {
+    webSocket.send('hello');
+    return false;
+  }
+  //
+  function onOpen(event) {
+    $("#conn-status").append('<em>接続しました。</em>');
+  }
+
+  function onMessage(event) {
+    document.getElementById('messages').innerHTML
+      += '<br />' + event.data;
+  }
+
+  function onError(event) {
+    alert(event.data);
+  }
+
+
+</script>
+</body>
+</html>
