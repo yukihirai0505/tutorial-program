@@ -1,4 +1,4 @@
-import scala.concurrent.Future
+
 
 // Seq[Seq[Int]]
 val sequence = Seq(Seq(1,2,3), Seq(4), Seq(5,6))
@@ -26,6 +26,6 @@ sequence flatMap identity とかける
 */
 
 // こんな書き方もできる
-Future successful Seq(1, 2, 3).map { number =>
+Seq(1, 2, 3).map { number =>
   Seq(number, number*2, number*3)
 }.foldLeft(Seq.empty[Int]) { (acc, seq) => acc ++ seq }
