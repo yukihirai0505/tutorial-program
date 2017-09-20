@@ -3,7 +3,7 @@ package example.akkawschat
 import java.util.Date
 
 import akka.actor.ActorSystem
-import akka.http.scaladsl.model.ws.{Message, TextMessage}
+import akka.http.scaladsl.model.ws.{ Message, TextMessage }
 import akka.http.scaladsl.server.Directives
 import akka.stream.scaladsl.Flow
 import shared.Protocol
@@ -49,9 +49,9 @@ class Webservice(implicit system: ActorSystem) extends Directives {
       }
       .via(theChat.chatFlow(sender)) // ... and route them through the chatFlow ...
       .map {
-      case msg: Protocol.Message ⇒
-        TextMessage.Strict(write(msg)) // ... pack outgoing messages into WS JSON messages ...
-    }
+        case msg: Protocol.Message ⇒
+          TextMessage.Strict(write(msg)) // ... pack outgoing messages into WS JSON messages ...
+      }
       .via(reportErrorsFlow) // ... then log any processing errors on stdin
 
   def reportErrorsFlow[T]: Flow[T, T, Any] =

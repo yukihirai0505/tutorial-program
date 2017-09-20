@@ -17,34 +17,34 @@ object Chat {
     // chat messages. It would be nicer if this could be built by stream operations
     // directly.
     val chatActor =
-    system.actorOf(Props(new Actor {
-      var subscribers = Set.empty[(String, ActorRef)]
+      system.actorOf(Props(new Actor {
+        var subscribers = Set.empty[(String, ActorRef)]
 
-      def receive: Receive = {
-        case NewParticipant(name, subscriber) ⇒
-          context.watch(subscriber)
-          subscribers += (name -> subscriber)
-          dispatch(Protocol.Joined(name, members))
-        case msg: ReceivedMessage ⇒ dispatch(msg.toChatMessage)
-        case msg: Protocol.ChatMessage ⇒ dispatch(msg)
-        case ParticipantLeft(person) ⇒
-          val entry@(name, ref) = subscribers.find(_._1 == person).get
-          // report downstream of completion, otherwise, there's a risk of leaking the
-          // downstream when the TCP connection is only half-closed
-          ref ! Status.Success(Unit)
-          subscribers -= entry
-          dispatch(Protocol.Left(person, members))
-        case Terminated(sub) ⇒
-          // clean up dead subscribers, but should have been removed when `ParticipantLeft`
-          subscribers = subscribers.filterNot(_._2 == sub)
-      }
+        def receive: Receive = {
+          case NewParticipant(name, subscriber) ⇒
+            context.watch(subscriber)
+            subscribers += (name -> subscriber)
+            dispatch(Protocol.Joined(name, members))
+          case msg: ReceivedMessage      ⇒ dispatch(msg.toChatMessage)
+          case msg: Protocol.ChatMessage ⇒ dispatch(msg)
+          case ParticipantLeft(person) ⇒
+            val entry @ (name, ref) = subscribers.find(_._1 == person).get
+            // report downstream of completion, otherwise, there's a risk of leaking the
+            // downstream when the TCP connection is only half-closed
+            ref ! Status.Success(Unit)
+            subscribers -= entry
+            dispatch(Protocol.Left(person, members))
+          case Terminated(sub) ⇒
+            // clean up dead subscribers, but should have been removed when `ParticipantLeft`
+            subscribers = subscribers.filterNot(_._2 == sub)
+        }
 
-      def sendAdminMessage(msg: String): Unit = dispatch(Protocol.ChatMessage("admin", msg))
+        def sendAdminMessage(msg: String): Unit = dispatch(Protocol.ChatMessage("admin", msg))
 
-      def dispatch(msg: Protocol.Message): Unit = subscribers.foreach(_._2 ! msg)
+        def dispatch(msg: Protocol.Message): Unit = subscribers.foreach(_._2 ! msg)
 
-      def members = subscribers.map(_._1).toSeq
-    }))
+        def members = subscribers.map(_._1).toSeq
+      }))
 
     // Wraps the chatActor in a sink. When the stream to this sink will be completed
     // it sends the `ParticipantLeft` message to the chatActor.
@@ -63,8 +63,8 @@ object Chat {
         // This source will only buffer one element and will fail if the client doesn't read
         // messages fast enough.
         val out =
-        Source.actorRef[Protocol.ChatMessage](1, OverflowStrategy.fail)
-          .mapMaterializedValue(chatActor ! NewParticipant(sender, _))
+          Source.actorRef[Protocol.ChatMessage](1, OverflowStrategy.fail)
+            .mapMaterializedValue(chatActor ! NewParticipant(sender, _))
 
         Flow.fromSinkAndSource(in, out)
       }
