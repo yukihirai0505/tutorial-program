@@ -34,15 +34,18 @@ object ALSExample {
       .getOrCreate()
     import spark.implicits._
 
-    // $example on$
+    // Convert text data to data frame
     val ratings = spark.read.textFile("sample_movielens_ratings.txt")
       .map(parseRating)
       .toDF()
+    // Separate training data and test data
     val Array(training, test) = ratings.randomSplit(Array(0.8, 0.2))
 
     // Build the recommendation model using ALS on the training data
     val als = new ALS()
-      .setMaxIter(5)
+      .setNumBlocks(10)
+      .setRank(10)
+      .setMaxIter(10)
       .setRegParam(0.01)
       .setUserCol("userId")
       .setItemCol("movieId")
