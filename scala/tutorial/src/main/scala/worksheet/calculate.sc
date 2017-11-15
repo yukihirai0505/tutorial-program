@@ -1,0 +1,1 @@
+val hoge = BigDecimal(4.toDouble/11).setScale(1, scala.math.BigDecimal.RoundingMode.HALF_UP)
