@@ -35,7 +35,7 @@
     'prefix': 'huto'
     'body': '<span class="huto">$1</span>'
   'oomozi':
-    'prefix': 'huto'
+    'prefix': 'oomozi'
     'body': '<span class="oomozi">$1</span>'
 #
 # Atom Flight Manual:
