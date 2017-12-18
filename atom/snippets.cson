@@ -22,6 +22,21 @@
   'center':
     'prefix': 'center'
     'body': '<div class="center">\n  $1\n</div>'
+  'ul rich':
+    'prefix': 'ulrich'
+    'body': '<div class="maruck">\n  <ul>\n    <li>$1</li>\n  </ul>\n</div>'
+  'ol rich':
+    'prefix': 'olrich'
+    'body': '<div class="maruno">\n  <ol>\n    <li>$1</li>\n  </ol>\n</div>'
+  'reference':
+    'prefix': 'reference'
+    'body': '<span class="sankou">参考</span>'
+  'huto':
+    'prefix': 'huto'
+    'body': '<span class="huto">$1</span>'
+  'oomozi':
+    'prefix': 'huto'
+    'body': '<span class="oomozi">$1</span>'
 #
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
