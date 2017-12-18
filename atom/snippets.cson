@@ -1,0 +1,28 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+'.text.html.basic':
+  'a link':
+    'prefix': 'alink'
+    'body': '<a href=${1:""} target="_blank" rel="nofollow noopener">$2</a>'
+  'talk left':
+    'prefix': 'tleft'
+    'body': '<div class="talk-wrap"><div class="left-icon masaki"></div><div class="talk-left">${1:メッセージ}</div></div>'
+  'talk right':
+    'prefix': 'tright'
+    'body': '<div class="talk-wrap"><div class="right-icon masaki"></div><div class="talk-right">${1:メッセージ}</div></div>'
+  'talk end':
+    'prefix': 'tend'
+    'body': '<div class="talk-end"></div>'
+  'center':
+    'prefix': 'center'
+    'body': '<div class="center">\n  $1\n</div>'
+#
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
