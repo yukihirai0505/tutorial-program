@@ -9,7 +9,10 @@
 '.text.html.basic':
   'a link':
     'prefix': 'alink'
-    'body': '<a href=${1:""} target="_blank" rel="nofollow noopener">$2</a>'
+    'body': '<a href="$1" target="_blank" rel="nofollow noopener">$2</a>'
+  'register link':
+    'prefix': 'registerLink'
+    'body': '<a class="register-btn" href="$1" target="_blank" rel="nofollow noopener"><i class="fa fa-external-link" aria-hidden="true"></i> $2</a>'
   'talk left':
     'prefix': 'tleft'
     'body': '<div class="talk-wrap"><div class="left-icon masaki"></div><div class="talk-left">${1:メッセージ}</div></div>'
