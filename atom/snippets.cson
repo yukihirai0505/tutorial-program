@@ -64,6 +64,12 @@
   'binance':
     'prefix': 'binance'
     'body': '<a href="https://www.binance.com/?ref=11196616" target="_blank" rel="noopener">Binance(バイナンス)</a>'
+  'cryptopia':
+    'prefix': 'cryptopia'
+    'body': '<a href="https://www.cryptopia.co.nz/Register?referrer=yabaiwebyasan" target="_blank" rel="noopener">Cryptopia(クリプトピア)</a>'
+  'kucoin':
+    'prefix': 'kucoin'
+    'body': '<a href="https://www.kucoin.com/#/?r=1yPPd" target="_blank" rel="noopener">KuCoin(クーコイン)</a>'
   'tablefull':
     'prefix': 'tablefull'
     'body': '<table>\n<thead>\n<tr>\n<th>順位</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n</tr>\n</tbody>\n</table>'
