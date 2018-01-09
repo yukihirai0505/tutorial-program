@@ -37,9 +37,42 @@
   'huto':
     'prefix': 'huto'
     'body': '<span class="huto">$1</span>'
+  'hutoaka':
+    'prefix': 'hutoaka'
+    'body': '<span class="hutoaka"></span>'
+  'ymarker':
+    'prefix': 'ymarker'
+    'body': '<span class="ymarker">'
+  'rmarker':
+    'prefix': 'rmarker'
+    'body': '<span class="rmarker">'
   'oomozi':
     'prefix': 'oomozi'
     'body': '<span class="oomozi">$1</span>'
+  'zaif':
+    'prefix': 'zaif'
+    'body': '<a href="https://zaif.jp?ac=kv0eo8m3w2" target="_blank" rel="nofollow noopener">Zaif(ザイフ)</a>'
+  'coincheck':
+    'prefix': 'coincheck'
+    'body': '<a href="https://coincheck.com/?c=yU_pr0rsOKI" target="_blank" rel="noopener">Coincheck(コインチェック)</a>'
+  'bitbank':
+    'prefix': 'bitbank'
+    'body': '<a href="https://p-salm.jp/ad/p/r?_site=60&_article=3&_link=4&_image=4" target="_blank" rel="noopener">bitbank(ビットバンク)</a>'
+  'bitflyer':
+    'prefix': 'bitflyer'
+    'body': '<a href="https://bitflyer.jp?bf=2epg3eye" target="_blank" rel="noopener">bitFlyer(ビットフライヤー)</a>'
+  'binance':
+    'prefix': 'binance'
+    'body': '<a href="https://www.binance.com/?ref=11196616" target="_blank" rel="noopener">Binance(バイナンス)</a>'
+  'cryptopia':
+    'prefix': 'cryptopia'
+    'body': '<a href="https://www.cryptopia.co.nz/Register?referrer=yabaiwebyasan" target="_blank" rel="noopener">Cryptopia(クリプトピア)</a>'
+  'kucoin':
+    'prefix': 'kucoin'
+    'body': '<a href="https://www.kucoin.com/#/?r=1yPPd" target="_blank" rel="noopener">KuCoin(クーコイン)</a>'
+  'tablefull':
+    'prefix': 'tablefull'
+    'body': '<table>\n<thead>\n<tr>\n<th>順位</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n</tr>\n</tbody>\n</table>'
 #
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
