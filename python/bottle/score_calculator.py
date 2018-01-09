@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
 from bottle import route, run
-
-db_name = "fprank"
-host = "localhost"
-username = "root"
-passwd = "root"
-
+from config import db_name, host, username, passwd
 
 @route('/score/<tag>')
 def score(tag):
