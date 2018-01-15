@@ -70,6 +70,18 @@
   'kucoin':
     'prefix': 'kucoin'
     'body': '<a href="https://www.kucoin.com/#/?r=1yPPd" target="_blank" rel="noopener">KuCoin(クーコイン)</a>'
+  'mercatox':
+    'prefix': 'mercatox'
+    'body': '<a href="https://mercatox.com/?referrer=245172" target="_blank" rel="noopener">MERCATOX(メルカトックス)</a>'
+  'exx.com':
+    'prefix': 'exxcom'
+    'body': '<a href="https://www.exx.com/r/de52e8cae8b7c43fb5dced77e6f07ed7" target="_blank" rel="noopener">EXX.com</a>'
+  'reddit':
+    'prefix': 'reddit'
+    'body': '<a href="https://www.reddit.com" target="_blank" rel="noopener">Reddit(レディット)</a>'
+  'quoinex':
+    'prefix': 'quoinex'
+    'body': '<a href="https://h.accesstrade.net/sp/cc?rk=0100lax900hqp6" rel="nofollow" target="_blank">QUOINEX<img src="https://h.accesstrade.net/sp/rr?rk=0100lax900hqp6" width="1" height="1" border="0" alt=""></a>'
   'tablefull':
     'prefix': 'tablefull'
     'body': '<table>\n<thead>\n<tr>\n<th>順位</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n</tr>\n</tbody>\n</table>'
