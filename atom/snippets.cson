@@ -26,4 +26,10 @@
   'nikukyu_list':
     'prefix': 'nikukyu_list'
     'body': '<div class="sng-box box32">\n<div class="box-title">$1</div>\n<div class="li-niku li-mainbdr main-c-before">\n<ul>\n<li>$2</li>\n</ul>\n</div>\n</div>'
+  'say_left':
+    'prefix': 'lsay'
+    'body': '<div class="say left">\n<p class="faceicon"><img src="https://yabaiwebyasan.com/wp-content/uploads/2018/02/%E3%83%A4%E3%83%8F%E3%82%99%E3%82%A4WEB%E5%B1%8B%E3%81%95%E3%82%93.jpg"><span>ヤバWEB</span></p>\n<div class="chatting">\n<div class="sc">$1</div>\n</div>\n</div>'
+  'say_right':
+    'prefix': 'rsay'
+    'body': '<div class="say right">\n<div class="chatting">\n<div class="sc">$1</div>\n</div>\n<p class="faceicon"><img src="https://yabaiwebyasan.com/wp-content/uploads/2017/12/%E3%82%86%E3%81%8B%E3%81%A1%E3%81%83-e1512635530909.png"><span>うぇぶ子</span></p>\n</div>'
 
