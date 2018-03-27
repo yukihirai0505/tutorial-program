@@ -1,91 +1,20 @@
-# Your snippets
-#
-# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
-# expand the prefix into a larger code block with templated values.
-#
-# You can create a new snippet in this file by typing "snip" and then hitting
-# tab.
-#
 '.text.html.basic':
   'a link':
     'prefix': 'alink'
     'body': '<a href="$1" target="_blank" rel="nofollow noopener">$2</a>'
-  'register link':
-    'prefix': 'registerLink'
-    'body': '<a class="register-btn" href="$1" target="_blank" rel="nofollow noopener"><i class="fa fa-external-link" aria-hidden="true"></i> $2</a>'
-  'talk left':
-    'prefix': 'tleft'
-    'body': '<div class="talk-wrap"><div class="left-icon masaki"></div><div class="talk-left">${1:メッセージ}</div></div>'
-  'talk right':
-    'prefix': 'tright'
-    'body': '<div class="talk-wrap"><div class="right-icon masaki"></div><div class="talk-right">${1:メッセージ}</div></div>'
-  'talk end':
-    'prefix': 'tend'
-    'body': '<div class="talk-end"></div>'
-  'center':
-    'prefix': 'center'
-    'body': '<div class="center">\n  $1\n</div>'
-  'ul rich':
-    'prefix': 'ulrich'
-    'body': '<div class="maruck">\n  <ul>\n    <li>$1</li>\n  </ul>\n</div>'
-  'ol rich':
-    'prefix': 'olrich'
-    'body': '<div class="maruno">\n  <ol>\n    <li>$1</li>\n  </ol>\n</div>'
-  'reference':
-    'prefix': 'reference'
-    'body': '<span class="sankou">参考</span>'
-  'huto':
-    'prefix': 'huto'
-    'body': '<span class="huto">$1</span>'
-  'hutoaka':
-    'prefix': 'hutoaka'
-    'body': '<span class="hutoaka"></span>'
-  'ymarker':
-    'prefix': 'ymarker'
-    'body': '<span class="ymarker">'
-  'rmarker':
-    'prefix': 'rmarker'
-    'body': '<span class="rmarker">'
-  'oomozi':
-    'prefix': 'oomozi'
-    'body': '<span class="oomozi">$1</span>'
   'zaif':
     'prefix': 'zaif'
     'body': '<a href="https://zaif.jp?ac=kv0eo8m3w2" target="_blank" rel="nofollow noopener">Zaif(ザイフ)</a>'
   'coincheck':
     'prefix': 'coincheck'
     'body': '<a href="https://coincheck.com/?c=yU_pr0rsOKI" target="_blank" rel="noopener">Coincheck(コインチェック)</a>'
-  'bitbank':
-    'prefix': 'bitbank'
-    'body': '<a href="https://p-salm.jp/ad/p/r?_site=60&_article=3&_link=4&_image=4" target="_blank" rel="noopener">bitbank(ビットバンク)</a>'
   'bitflyer':
     'prefix': 'bitflyer'
     'body': '<a href="https://bitflyer.jp?bf=2epg3eye" target="_blank" rel="noopener">bitFlyer(ビットフライヤー)</a>'
-  'binance':
-    'prefix': 'binance'
-    'body': '<a href="https://www.binance.com/?ref=11196616" target="_blank" rel="noopener">Binance(バイナンス)</a>'
-  'cryptopia':
-    'prefix': 'cryptopia'
-    'body': '<a href="https://www.cryptopia.co.nz/Register?referrer=yabaiwebyasan" target="_blank" rel="noopener">Cryptopia(クリプトピア)</a>'
-  'kucoin':
-    'prefix': 'kucoin'
-    'body': '<a href="https://www.kucoin.com/#/?r=1yPPd" target="_blank" rel="noopener">KuCoin(クーコイン)</a>'
-  'mercatox':
-    'prefix': 'mercatox'
-    'body': '<a href="https://mercatox.com/?referrer=245172" target="_blank" rel="noopener">MERCATOX(メルカトックス)</a>'
-  'exx.com':
-    'prefix': 'exxcom'
-    'body': '<a href="https://www.exx.com/r/de52e8cae8b7c43fb5dced77e6f07ed7" target="_blank" rel="noopener">EXX.com</a>'
-  'reddit':
-    'prefix': 'reddit'
-    'body': '<a href="https://www.reddit.com" target="_blank" rel="noopener">Reddit(レディット)</a>'
-  'quoinex':
-    'prefix': 'quoinex'
-    'body': '<a href="https://h.accesstrade.net/sp/cc?rk=0100lax900hqp6" rel="nofollow" target="_blank">QUOINEX<img src="https://h.accesstrade.net/sp/rr?rk=0100lax900hqp6" width="1" height="1" border="0" alt=""></a>'
-  'tablefull':
-    'prefix': 'tablefull'
-    'body': '<table>\n<thead>\n<tr>\n<th>順位</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n</tr>\n</tbody>\n</table>'
-#
-# Atom Flight Manual:
-# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+  'sobig':
+    'prefix': 'sobig'
+    'body': '<span class="sobig">$1</span>'
+  'big':
+    'prefix': 'big'
+    'body': '<span class="big">$1</span>'
 
