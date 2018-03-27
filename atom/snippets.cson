@@ -13,8 +13,17 @@
     'body': '<a href="https://bitflyer.jp?bf=2epg3eye" target="_blank" rel="noopener">bitFlyer(ビットフライヤー)</a>'
   'sobig':
     'prefix': 'sobig'
-    'body': '<span class="sobig">$1</span>'
+    'body': '<span class="sobig"><b>$1</b></span>'
   'big':
     'prefix': 'big'
-    'body': '<span class="big">$1</span>'
+    'body': '<span class="big"><b>$1</b></span>'
+  'reference':
+    'prefix': 'reference'
+    'body': '<a class="reference table" href="$1" target="_blank" rel="nofollow">\n<div class="tbcell">参考</div>\n<p class="tbcell">$2<span>$3</span></p>\n</a>'
+  'olrich':
+    'prefix': 'olrich'
+    'body': '<div class="sng-box box31">\n<div class="box-title">$1</div>\n<div class="ol-circle li-mainbdr main-bc-before">\n<ol>\n<li>$2</li>\n</ol>\n</div>\n</div>'
+  'nikukyu_list':
+    'prefix': 'nikukyu_list'
+    'body': '<div class="sng-box box32">\n<div class="box-title">$1</div>\n<div class="li-niku li-mainbdr main-c-before">\n<ul>\n<li>$2</li>\n</ul>\n</div>\n</div>'
 
