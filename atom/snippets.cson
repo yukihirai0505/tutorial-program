@@ -32,4 +32,7 @@
   'say_right':
     'prefix': 'rsay'
     'body': '<div class="say right">\n<div class="chatting">\n<div class="sc">$1</div>\n</div>\n<p class="faceicon"><img src="https://yabaiwebyasan.com/wp-content/uploads/2017/12/%E3%82%86%E3%81%8B%E3%81%A1%E3%81%83-e1512635530909.png"><span>うぇぶ子</span></p>\n</div>'
+  'youtube':
+    'prefix': 'youtube'
+    'body': '<script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channelid="UClcWgUnEr79fJBcpqnm4M1w" data-layout="full" data-count="default"></div>'
 
