@@ -1,7 +1,0 @@
-FROM ruby:2.2.2
-RUN apt-get update -qq && apt-get install -y build-essential
-RUN mkdir /myapp
-WORKDIR /myapp
-ADD Gemfile /myapp/Gemfile
-RUN bundle install
-ADD . /myapp
