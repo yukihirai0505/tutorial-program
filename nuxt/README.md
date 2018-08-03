@@ -9,6 +9,9 @@ Node >=8.9
 `npm install -g @vue/cli @vue/cli-init`
 `vue init nuxt-community/starter-template nuxt`
 
+このチュートリアルが役立ちそう
+https://scotch.io/tutorials/build-a-server-side-rendered-vue-app-with-nuxtjs
+
 ## Build Setup
 
 ``` bash
