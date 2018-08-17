@@ -12,14 +12,32 @@
         <script src="https://unpkg.com/vue/dist/vue.js"></script>
         <script>
             /* Create a Vue instance */
+            // new Vue({
+            //     template: '#app',
+            //     data: function() {
+            //         return {
+            //             name: ''
+            //         }
+            //     }
+            // }).$mount('#app');
             new Vue({
-                template: '#app',
-                data: function() {
+                template: `
+                <div>
+                    <p>{{counter}}</p>
+                    <button v-on:click="incrementCounter">++</button>
+                </div>
+                `,
+                data() {
                     return {
-                        name: ''
+                        counter
+                    }
+                },
+                methods: {
+                    incrementCounter() {
+                        this.counter++
                     }
                 }
-            }).$mount('#app');
+            });
         </script>
     </body>
 </html>
