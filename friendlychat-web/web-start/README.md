@@ -1,5 +1,29 @@
-# Firebase Web Codelab - Start code
+## Setup
 
-This folder contains the starting code for the [Firebase: Build a Real Time Web Chat App Codelab](https://codelabs.developers.google.com/codelabs/firebase-web/).
+```
+$ npm -g install firebase-tools
+$ firebase --version
+$ firebase login
+$ firebase use --add
+```
 
-If you'd like to jump directly to the end and see the finished code head to the [web](../web) directory.
+## How to
+
+### Serve Hosting
+
+```
+$ firebase serve --only hosting
+```
+
+### Add data to Database
+
+```
+$ firebase database:set / ../initial_messages.json
+```
+
+### Deploy database settings
+
+```
+$ firebase deploy --only database
+```
+
