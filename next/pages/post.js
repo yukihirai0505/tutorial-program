@@ -1,16 +1,16 @@
-import {withRouter} from 'next/router'
+import { withRouter } from 'next/router'
 import Layout from '../components/MyLayout'
 
-const Content = withRouter((props) => (
+const Content = withRouter(props => (
   <div>
     <h1>{props.router.query.title}</h1>
     <p>This is the post content.</p>
   </div>
 ))
 
-const Page = (props) => (
+const Page = (
   <Layout>
-    <Content/>
+    <Content />
   </Layout>
 )
 
