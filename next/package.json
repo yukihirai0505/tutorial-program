@@ -4,8 +4,7 @@
   "description": "https://nextjs.org/learn/basics/getting-started/setup",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node server.js"
   },
   "keywords": [],
   "author": "",
