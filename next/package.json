@@ -1,0 +1,18 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "https://nextjs.org/learn/basics/getting-started/setup",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^6.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
