@@ -53,15 +53,21 @@ export default class App extends Component<Props> {
       uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
     };
     return (
-      <View>
-        <Text>Hello world!</Text>
+      <View style={{flex: 1}}>
+        {/* <Text>Hello world!</Text>
         <Image source={pic} style={{width: 193, height: 110}}/>
         <Greeting name='Rexxar' />
         <Greeting name='Jaina' />
         <Greeting name='Valeera' />
         <Blink text='I love to blink' />
         <Text style={[styles.red, styles.bigblue]}>red, then bigblue</Text>
-      </View>
+        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+        <View style={{width: 100, height: 100, backgroundColor: 'skyblue'}} />
+        <View style={{width: 150, height: 150, backgroundColor: 'steelblue'}} /> */}
+          <View style={{flex: 1, backgroundColor: 'powderblue'}} />
+          <View style={{flex: 2, backgroundColor: 'skyblue'}} />
+          <View style={{flex: 3, backgroundColor: 'steelblue'}} />
+        </View>
     );
   }
 }
