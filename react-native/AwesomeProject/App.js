@@ -26,6 +26,27 @@ class Greeting extends Component {
   }
 }
 
+class Blink extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {isShowingText: true};
+
+    // Toggle the state every second
+    setInterval(() => {
+      this.setState(previousState => {
+        return { isShowingText: !previousState.isShowingText };
+      });
+    }, 1000);
+  }
+
+  render() {
+    let display = this.state.isShowingText ? this.props.text : ' ';
+    return (
+      <Text>{display}</Text>
+    );
+  }
+}
+
 export default class App extends Component<Props> {
   render() {
     let pic = {
@@ -38,6 +59,7 @@ export default class App extends Component<Props> {
         <Greeting name='Rexxar' />
         <Greeting name='Jaina' />
         <Greeting name='Valeera' />
+        <Blink text='I love to blink' />
       </View>
     );
   }
