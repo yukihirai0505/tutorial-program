@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -17,11 +17,27 @@ const instructions = Platform.select({
 });
 
 type Props = {};
+
+class Greeting extends Component {
+  render() {
+    return (
+      <Text>Hello {this.props.name}!</Text>
+    );
+  }
+}
+
 export default class App extends Component<Props> {
   render() {
+    let pic = {
+      uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+    };
     return (
       <View>
         <Text>Hello world!</Text>
+        <Image source={pic} style={{width: 193, height: 110}}/>
+        <Greeting name='Rexxar' />
+        <Greeting name='Jaina' />
+        <Greeting name='Valeera' />
       </View>
     );
   }
