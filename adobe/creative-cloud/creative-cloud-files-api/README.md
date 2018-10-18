@@ -19,3 +19,7 @@ Start https://localhost:4443/
 ```
 $ python https-server.py
 ```
+
+## Memo
+
+Files will be uploaded to https://assets.adobe.com/files
