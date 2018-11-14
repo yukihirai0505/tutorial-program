@@ -13,6 +13,7 @@ test_path = './test_images'
 cascadePath = "data/haarcascades/haarcascade_frontalface_default.xml"
 # for anime
 # cascadePath = "./lbpcascade_animeface.xml"
+# TODO: アニメかどうかで読み込むファイル切り替えたりしたほうがいいかも
 faceCascade = cv2.CascadeClassifier(cascadePath)
 
 # FisherFace
