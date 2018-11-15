@@ -9,4 +9,5 @@ $ pip install --no-cache-dir -r requirements.txt
 ```
 $ python 
 $ python BeautifulSoup/find_sample.py
+$ scrapy runspider scrapy/sample.py
 ```
